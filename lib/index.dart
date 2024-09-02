@@ -6,5 +6,7 @@ export '/pages/notifications/notifications_widget.dart'
 export '/pages/card/card_widget.dart' show CardWidget;
 export '/pages/profile/profile_widget.dart' show ProfileWidget;
 export '/pages/change_pin/change_pin_widget.dart' show ChangePinWidget;
-export '/pages/finger_print/finger_print_widget.dart' show FingerPrintWidget;
 export '/pages/settings/settings_widget.dart' show SettingsWidget;
+export '/pages/finger_print/finger_print_widget.dart' show FingerPrintWidget;
+export '/pages/confirm_pin/confirm_pin_widget.dart' show ConfirmPinWidget;
+export '/pages/add_card/add_card_widget.dart' show AddCardWidget;

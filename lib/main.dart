@@ -97,8 +97,8 @@ class _NavBarPageState extends State<NavBarPage> {
     final tabs = {
       'HomePage': const HomePageWidget(),
       'Stats': const StatsWidget(),
-      'card': const CardWidget(),
       'notifications': const NotificationsWidget(),
+      'card': const CardWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
 
@@ -135,18 +135,18 @@ class _NavBarPageState extends State<NavBarPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              FFIcons.kcreditCard,
-              size: 34.0,
-            ),
-            label: 'card',
-            tooltip: '',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
               Icons.notifications_sharp,
               size: 32.0,
             ),
             label: 'Notifications',
+            tooltip: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              FFIcons.kcreditCard,
+              size: 34.0,
+            ),
+            label: 'card',
             tooltip: '',
           )
         ],

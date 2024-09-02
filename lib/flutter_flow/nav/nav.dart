@@ -74,14 +74,24 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const ChangePinWidget(),
         ),
         FFRoute(
-          name: 'fingerPrint',
+          name: 'Settings',
+          path: '/settings',
+          builder: (context, params) => const SettingsWidget(),
+        ),
+        FFRoute(
+          name: 'FingerPrint',
           path: '/fingerPrint',
           builder: (context, params) => const FingerPrintWidget(),
         ),
         FFRoute(
-          name: 'Settings',
-          path: '/settings',
-          builder: (context, params) => const SettingsWidget(),
+          name: 'ConfirmPin',
+          path: '/confirmPin',
+          builder: (context, params) => const ConfirmPinWidget(),
+        ),
+        FFRoute(
+          name: 'addCard',
+          path: '/addCard',
+          builder: (context, params) => const AddCardWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

@@ -101,16 +101,25 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                   child: Padding(
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 20.0, 0.0),
-                                    child: Container(
-                                      width: 72.0,
-                                      height: 72.0,
-                                      clipBehavior: Clip.antiAlias,
-                                      decoration: const BoxDecoration(
-                                        shape: BoxShape.circle,
-                                      ),
-                                      child: Image.network(
-                                        'https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg',
-                                        fit: BoxFit.cover,
+                                    child: InkWell(
+                                      splashColor: Colors.transparent,
+                                      focusColor: Colors.transparent,
+                                      hoverColor: Colors.transparent,
+                                      highlightColor: Colors.transparent,
+                                      onTap: () async {
+                                        context.pushNamed('Profile');
+                                      },
+                                      child: Container(
+                                        width: 72.0,
+                                        height: 72.0,
+                                        clipBehavior: Clip.antiAlias,
+                                        decoration: const BoxDecoration(
+                                          shape: BoxShape.circle,
+                                        ),
+                                        child: Image.network(
+                                          'https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg',
+                                          fit: BoxFit.cover,
+                                        ),
                                       ),
                                     ),
                                   ),
